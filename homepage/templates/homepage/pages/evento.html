@@ -1,0 +1,76 @@
+{% extends 'global/base_geral.html' %}
+{% block 'title' %}Evento |{% endblock 'title' %}
+{% block 'conteudo' %}
+  <!-- EVENTO-->
+  <section id="evento" >
+    <div class="section-bg" >
+        <div class="section-container3">
+            <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+                <h1>{{ver_evento.titulo}}</h1>
+            </div>
+        </div>
+        <div class="container">
+
+
+      
+            <div class="row">
+                <div class="col l6 m12 s12">
+                    <p class="sobre-div" data-aos="zoom-in">{{ver_evento.descricao}}</p>
+                    <div class="row center">
+                        <div class="col l12 s12 m12">
+                          <div class="card  darken-1">
+                            <div class="card-content black-text">
+                              <span class="card-title">Data do Evento</span>
+                              <br>
+                              <p> <span class="span-data">Data Inicial:</span> {{ver_evento.datainicio}}</p>
+                              <br>
+                              <p> <span class="span-data">Data Final:</span> {{ver_evento.datafim}}</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="{{ver_evento.resultado_pdf.url}}" target="_blank" class="btn red pulses">Resultados <i class='bx bxs-file-pdf'></i></a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col l6 m12 s12"><br><br><br><br>
+                    <div class="video-container" data-aos="zoom-in">
+                        <iframe width="560" height="315" src="{{ver_evento.linkvideo}}"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="section-container3">
+            <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+                <h1>Fotos</h1>
+            </div>
+        </div>
+        <div class="photo-gallery" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+            {% block 'galeria' %}
+            {% for ver_evento in foto  %}
+            {% include 'homepage/partials/galeriaitem.html' %}
+            {% endfor %}
+            
+            {% endblock 'galeria' %}
+            
+            
+        </div>
+        <br><br><br>
+    </div>
+
+    
+
+
+
+    </div>
+</section>
+
+               
+
+{% endblock 'conteudo' %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        {% include 'homepage/partials/head.html' %}
+        <title>{% block 'title' %}{% endblock 'title' %} Kenda Experience</title>
+    </head>
+    <body>
+        <main id="home">
+            
+            {% block 'conteudo' %}{% endblock 'conteudo' %}
+            
+            {% include 'homepage/partials/js.html' %}
+
+        </main>
+        
+    </body>
+e
+</html>

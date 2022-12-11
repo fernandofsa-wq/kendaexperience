@@ -1,0 +1,41 @@
+{% load static %}
+<!-- cONTADOR-->
+        <div class="row">
+            <div class="col l4 s12 cont-div-red center">
+                <section id="contador">
+                    <div class="conteudo">
+                        <h1 id="cores"><span>Próximo </span>Evento:</h1>
+                            <div class="conta">
+                            <div id="day">Na</div>
+                            <div id="hour">Na</div>
+                            <div id="minute">Na</div>
+                            <div id="second">Na</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="col l4 s12 cont-div-black center">
+                <img src="{% static 'homepage/img/logo2.png'%}" alt="" class="img-contador">
+            </div>
+            <div class="col l4 s12 center">
+                <div id="pat-titulo">
+                <h1 class="pat-titulo">Patrocínios</h1>
+            </div>
+                <div class="owl-carousel clients-carousel">
+                {% block 'patrocinio' %}
+                   {% for patrocinio in patrocinios %}
+                   {% include 'homepage/partials/patrocinioone.html' %}
+                   {% endfor %}
+                {% endblock 'patrocinio' %}
+                
+                    
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- FIM cONTADOR-->

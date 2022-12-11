@@ -1,0 +1,49 @@
+{% load static %}
+<header>
+    <!-- DropDown L-->
+    <ul id="eventos" class="dropdown-content">
+        {% block 'eventolinks' %}
+        {% for ver_evento in evento %}
+        {% include 'homepage/partials/eventoslinks.html' %}
+        {% endfor %}
+        {% endblock 'eventolinks' %}
+
+    </ul>
+     <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+
+                <a href="#!" class="brand-logo"><img src="{% static 'homepage/img/logo.png'%}" class="menu-logo" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class='bx bx-menu icon-menu'></i>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a  class="scroll"  href="#home">Home</a></li>
+                        <li><a  class="scroll"  href="#sobre">Kenda Experience</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="eventos">Eventos<i
+                                    class="fa-solid fa-chevron-down menu-drop-icon"></i></a></li>
+                        <li><a href="regulamento">Regulamento</a></li>
+                        <li><a href="inscricao">Inscrições</a></li>
+                        
+                        <li><a  class="scroll"  href="#contato">Contato</a></li>
+                        <a  href="#contato" class="btn scroll">Saiba mais</a>
+                    </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="scroll" href="#home">Home</a></li>
+        <li><a class="scroll" href="#sobre">Kenda Experience</a></li>
+        <li><a href="eventos">Eventos</a></li>
+        <li><a href="regulamento">Regulamento</a></li>
+        <li><a href="inscricao">Inscrições</a></li>
+        <li><a class="scroll"  href="#contato">Contato</a></li>
+        <div class="row">
+            <br>
+            <div class="col s3"></div>
+            <div class="col s6"><a href="#contato" class="btn pulse center scroll">Saiba mais</a></div>
+            <div class="col s3"></div>
+        </div>
+    </ul>
+</header>

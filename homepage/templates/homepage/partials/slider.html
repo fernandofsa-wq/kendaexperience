@@ -1,0 +1,15 @@
+<!-- SLIDER -->
+<section>
+    <div class="slider">
+        <ul class="slides">
+
+            {% block 'slide' %}
+            {% for slider in sliders %}
+            {% include 'homepage/partials/sliderone.html' %}
+            {% endfor %}
+            {% endblock 'slide' %}
+            
+            
+        </ul>
+    </div>
+</section>

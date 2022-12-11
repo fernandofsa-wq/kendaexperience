@@ -1,0 +1,18 @@
+{% block 'inscricao' %}
+<div class="col l4">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="card-image">
+            <img src="{{inscricao.img.url}}">
+            <span class="card-title">{{inscricao.titulo}}</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="{{inscricao.link}}"><i class='bx bx-play '></i></a>
+          </div>
+          <div class="card-content">
+            <p>{{inscricao.descricao}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock 'inscricao' %}

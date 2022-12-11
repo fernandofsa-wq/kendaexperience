@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'homepage/img/icon.png'%}" type="image/x-icon" />
+    <title>Kenda Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/materialize.min.css'%}" />
+
+    <!-- BoxIcons -->
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/boxicons/css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/boxicons/css/animations.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/boxicons/css/transformations.css' %}">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'homepage/css/puro/estilo.css' %}">
+
+    <!-- Carrosel -->
+    <link href="{% static 'homepage/css/lib/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/animate.min.css' %}">
+
+    <!-- Venobox -->
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/venobox.css' %}">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="{% static 'homepage/css/lib/aos.css' %}">
+
+
+
+
+</head>
+
+<body>
+    <main id="home">
+        <!--MENU-->
+        <header>
+            <!-- DropDown L-->
+            <ul id="eventos" class="dropdown-content">
+                <li><a href="evento.html">Kenda MTB 2022 Experience e coisas coisasdas</a></li>
+                <li><a href="#!">two</a></li>
+
+            </ul>
+            <ul id="resultados" class="dropdown-content">
+                <li><a href="resultado.html">one</a></li>
+                <li><a href="#!">two</a></li>
+            </ul>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+
+                        <a href="#!" class="brand-logo"><img src="{% static 'homepage/img/logo.png'%}" class="menu-logo" alt=""></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                class='bx bx-menu icon-menu'></i>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a  class="scroll"  href="#home">Home</a></li>
+                                <li><a  class="scroll"  href="#sobre">Kenda Experience</a></li>
+                                <li><a class="dropdown-trigger" href="#!" data-target="eventos">Eventos<i
+                                            class="fa-solid fa-chevron-down menu-drop-icon"></i></a></li>
+                                <li><a href="regulamentos.html">Regulamento</a></li>
+                                <li><a href="inscricoes.html">Inscrições</a></li>
+                                <li><a class="dropdown-trigger" href="#!" data-target="resultados">Resultados<i
+                                            class="fa-solid fa-chevron-down menu-drop-icon"></i></a></li>
+                                <li><a  class="scroll"  href="#contato">Contato</a></li>
+                                <a  href="#contato" class="btn scroll">Saiba mais</a>
+                            </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a class="scroll" href="#home">Home</a></li>
+                <li><a class="scroll" href="#sobre">Kenda Experience</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Regulamento</a></li>
+                <li><a href="#">Inscrições</a></li>
+                <li><a href="#">Resultados</a></li>
+                <li><a class="scroll"  href="#contato">Contato</a></li>
+                <div class="row">
+                    <br>
+                    <div class="col s3"></div>
+                    <div class="col s6"><a href="#contato" class="btn pulse center scroll">Saiba mais</a></div>
+                    <div class="col s3"></div>
+                </div>
+            </ul>
+        </header>
+        <!-- SLIDER -->
+        <section>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/slider01.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <div class="row div-redes">
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-facebook-square icon-face'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-instagram-alt icon-instagram'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-youtube icon-youtube'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-whatsapp-square icon-whatsapp'></i></div>
+                                </a>
+
+                            </div>
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <br><br><br>
+                            <a href="#" class="btn-large  pulse">Começar</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider02.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <div class="row div-redes">
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-facebook-square icon-face'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-instagram-alt icon-instagram'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-youtube icon-youtube'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-whatsapp-square icon-whatsapp'></i></div>
+                                </a>
+
+                            </div>
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <br><br><br>
+                            <a href="#" class="btn-large pulse">Começar</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider03.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <div class="row div-redes">
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-facebook-square icon-face'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-instagram-alt icon-instagram'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-youtube icon-youtube'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-whatsapp-square icon-whatsapp'></i></div>
+                                </a>
+
+                            </div>
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <br><br><br>
+                            <a href="#" class="btn-large pulse">Começar</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider04.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <div class="row div-redes">
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-facebook-square icon-face'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-instagram-alt icon-instagram'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-youtube icon-youtube'></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="col l3 m3 s3"><i class='bx bxl-whatsapp-square icon-whatsapp'></i></div>
+                                </a>
+
+                            </div>
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <br><br><br>
+                            <a href="#" class="btn-large pulse">Começar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTADOR -->
+
+        <!-- cONTADOR-->
+        <div class="row">
+            <div class="col l4 s12 cont-div-red center">
+                <section id="contador">
+                    <div class="conteudo">
+                        <h1 id="cores"><span>Próximo </span>Evento:</h1>
+                        <div class="conta">
+                            <div id="day">Na</div>
+                            <div id="hour">Na</div>
+                            <div id="minute">Na</div>
+                            <div id="second">Na</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="col l4 s12 cont-div-black center">
+                <img src="{% static 'homepage/img/logo2.png'%}" alt="" class="img-contador">
+            </div>
+            <div class="col l4 s12 center">
+
+                <h4>Patrocínios</h4>
+                <div class="owl-carousel clients-carousel">
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/11.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/12.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/13.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/14.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/15.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/16.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/17.png" alt=""></a>
+                    <a href="https://csasport.com.br/" target="_blank"><img src="img/18.png" alt=""></a>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- FIM cONTADOR-->
+
+
+        <!-- SOBRE-->
+        <section id="sobre" >
+            <div class="section-bg" >
+                <div class="section-container3">
+                    <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+                        <h1>Kenda Experience</h1>
+                    </div>
+                </div>
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="col l4">
+                            <div class="row center">
+                                <div class="col s12 m7 l12">
+                                    <div class="card" data-aos="flip-left">
+                                        <div class="card-image title-card">
+                                            <i class='bx bx-cycling bx-fade-right icon-card'></i>
+
+
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of
+                                                information.
+                                                I am convenient because I require little markup to use effectively.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4">
+                            <div class="row center">
+                                <div class="col s12 m7 l12">
+                                    <div class="card" data-aos="flip-left">
+                                        <div class="card-image title-card">
+                                            <i class='bx bxs-trophy bx-burst icon-card'></i>
+
+
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of
+                                                information.
+                                                I am convenient because I require little markup to use effectively.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4">
+                            <div class="row center">
+                                <div class="col s12 m7 l12">
+                                    <div class="card" data-aos="flip-left">
+                                        <div class="card-image title-card">
+                                            <i class='bx bxs-flag-checkered bx-tada icon-card'></i>
+
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of
+                                                information.
+                                                I am convenient because I require little markup to use effectively.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l6">
+                            <p class="sobre-div" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor
+                                nam
+                                quibusdam libero laboriosam dignissimos non culpa iste, placeat repellat qui id nemo
+                                illum,
+                                debitis accusamus porro assumenda eius cumque. Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Nostrum obcaecati consequatur, illum voluptatum quod commodi
+                                laboriosam et
+                                magnam exercitationem sunt temporibus doloremque quibusdam nihil magni aspernatur
+                                cum
+                                recusandae eos. Quis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                                quisquam
+                                autem dolorum odio, similique culpa doloremque magni blanditiis nam impedit itaque
+                                aperiam
+                                distinctio iste esse voluptate sint! Doloremque, dolore veritatis.</p>
+                        </div>
+                        <div class="col l6"><br><br><br><br>
+                            <div class="video-container" data-aos="zoom-in">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HDXnSQ6uWio"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+     
+
+        <!-- Contatos -->
+
+        <secttion id="contato">
+            <div class="section-bg-contato">
+                <div class="section-container3">
+                    <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h1>Contato</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col l6 m12 s12">
+                                <div class="conteudo-contatos">
+
+                                    <label for=""><i class='bx bxs-user icon-contatos'></i>Responsável</label>
+                                    <p class="contato-esquerdo">Nathan</p>
+                                    <hr>
+                                    <label for=""><i class='bx bx-envelope icon-contatos'></i>Email</label>
+                                    <p class="contato-esquerdo">kendaexperience@kenda.com.br</p>
+                                    <hr>
+                                    <label for=""><i class='bx bxs-phone icon-contatos'></i>Telefone</label>
+                                    <p class="contato-esquerdo">(38) 91999-9999</p>
+                                    <hr>
+
+                                </div>
+
+                            </div>
+                            <div class="col l6">
+                                <div class="">
+                                    <div class="contato-div">
+                                        <form action="php/forms/enviar.php" method="post" role="form"
+                                            class="php-email-form">
+
+                                            <div class="row">
+                                                <h4 class="center">Entrar em contato</h4>
+                                                <div class="input-field col s12 m12 l6  ">
+
+                                                    <input id="nome" type="text" class="validate" name="name">
+                                                    <label for="nome"><i class="fa-solid fa-user"></i> Nome</label>
+                                                </div>
+
+                                                <div class="input-field col s12 m12 l6">
+
+                                                    <input id="telefone" type="tel" class="validate" name="phone">
+                                                    <label for=telefone><i class="fa-solid fa-phone"></i>
+                                                        Telefone</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-field col s12 m12 l12">
+
+                                                <input id="email" type="email" class="validate" name="email">
+                                                <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                                            </div>
+
+
+                                            <div class="input-field col s12 m12 l12">
+
+                                                <input id="assunto" type="text" class="validate" name="assunto">
+                                                <label for="assunto"><i class="fa-solid fa-megaphone"></i>
+                                                    Assunto</label>
+                                            </div>
+
+
+                                            <div class="input-field col s12 m12 l12">
+
+                                                <input id="mensagem" type="text" class="validate" name="message">
+                                                <label for="mensagem"><i class="fa-solid fa-message"></i>
+                                                    Mensagem</label>
+                                            </div>
+
+
+                                            <div class="mb-3">
+                                                <div class="loading"></div>
+                                                <div class="error-message"></div>
+                                                <div class="sent-message"></div>
+                                            </div>
+                                            <div class="text-center center"><button type="submit" class="btn">Enviar
+                                                    Mensagem</button></div><br>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </secttion>
+
+        <!-- Footer -->
+        <footer class="page-footer black">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Kenda Experience</h5>
+                        <p class="grey-text text-lighten-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Consequuntur sint libero, laudantium eos dolorum excepturi debitis at voluptatem!
+                            Aspernatur, atque excepturi magni repellat tenetur inventore dolores repudiandae porro enim
+                            velit?</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!"><i class='bx bxl-facebook'></i>
+                                    Facebook</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!"><i class='bx bxl-instagram'></i>
+                                    Instagram</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!"><i class='bx bxl-youtube'></i> Youtube</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="#!"><i class='bx bxl-whatsapp'></i>
+                                    Whatsapp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2023 Todos os direitos reservados a Kenda Experience
+                    <a class="grey-text text-lighten-4 right" href="mailto:fernando.araujo.eaa@gmail.com">Designer by
+                        Fernando Araújo</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scrips JS -->
+        <script src="{% static 'homepage/js/lib/jquery.js' %}"></script>
+        <script src="{% static 'homepage/js/lib/aos.js' %}"></script>
+        <script src="{% static 'homepage/js/lib/venobox.min.js' %}"></script>
+        <script src="{% static 'homepage/js/lib/materialize.min.js' %}"></script>
+        <script src="{% static 'homepage/js/puro/main.js' %}"></script>
+        <script src="{% static 'homepage/js/lib/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'homepage/js/puro/contador.js' %}"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </main>
+
+</body>
+
+</html>

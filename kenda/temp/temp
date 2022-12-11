@@ -1,0 +1,6 @@
+   urls raiz
+
+   from homepage.views import DataEventoJson
+   
+   path('dataevento-json/', DataEventoJson.as_view(),
+         name='dataevento-json-view'),

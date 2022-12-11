@@ -1,0 +1,171 @@
+<!-- Contatos -->
+
+<secttion id="contato">
+    <div class="section-bg-contato">
+        <div class="section-container3">
+            <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h1>Contato</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
+                <div class="row">
+                    <div class="col l6 m12 s12">
+                        <div class="conteudo-contatos">
+
+                            <label for=""><i class='bx bxs-user icon-contatos'></i>Responsável</label>
+                            <p class="contato-esquerdo">Nathan</p>
+                            <hr>
+                            <label for=""><i class='bx bx-envelope icon-contatos'></i>Email</label>
+                            <p class="contato-esquerdo">kendaexperience@kenda.com.br</p>
+                            <hr>
+                            <label for=""><i class='bx bxs-phone icon-contatos'></i>Telefone</label>
+                            <p class="contato-esquerdo">(38) 91999-9999</p>
+                            <hr>
+
+                        </div>
+
+                    </div>
+                    <div class="col l6">
+                        <div class="">
+                            <div class="contato-div">
+                                
+
+                                
+                              
+                              
+                                {% if nome %}
+                                <div class="alert card green lighten-4 green-text text-darken-4">
+                                    <div class="card-content">
+                                        <p><i class="material-icons"></i><span>Mensagem enviada com sucesso!</span></p>
+                                    </div>
+                                </div>
+                                <!-- Modal Trigger -->
+                                <!-- Modal Structure -->
+                                <form action="{% url 'contato' %}" method="POST" role="form"
+                                class="php-email-form">{% csrf_token %}
+
+                                <div class="row">
+                                    
+                                    <h4 class="center">Entrar em contato</h4>
+                                    <div class="input-field col s12 m12 l6  ">
+
+                                        <input id="nome" type="text" class="validate" name="nome">
+                                        <label for="nome"><i class="fa-solid fa-user"></i> Nome</label>
+                                    </div>
+
+                                    <div class="input-field col s12 m12 l6">
+
+                                        <input id="telefone" type="tel" class="validate" name="phone">
+                                        <label for=telefone><i class="fa-solid fa-phone"></i>
+                                            Telefone</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12 m12 l12">
+
+                                    <input id="email" type="email" class="validate" name="email">
+                                    <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                                </div>
+
+
+                                <div class="input-field col s12 m12 l12">
+
+                                    <input id="assunto" type="text" class="validate" name="assunto">
+                                    <label for="assunto"><i class="fa-solid fa-megaphone"></i>
+                                        Assunto</label>
+                                </div>
+
+
+                                <div class="input-field col s12 m12 l12">
+
+                                    <input id="mensagem" type="text" class="validate" name="message">
+                                    <label for="mensagem"><i class="fa-solid fa-message"></i>
+                                        Mensagem</label>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <div class="loading"></div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message"></div>
+                                </div>
+                                <div class="text-center center"><button type="submit" class="btn">Enviar
+                                        Mensagem</button></div><br>
+                                        
+                            </form>
+                   
+                             
+
+                                {% else %}
+                                <form action="{% url 'contato' %}" method="POST" role="form"
+                                    class="php-email-form">{% csrf_token %}
+
+                                    <div class="row">
+                                        
+                                        <h4 class="center">Entrar em contato</h4>
+                                        <div class="input-field col s12 m12 l6  ">
+
+                                            <input id="nome" type="text" class="validate" name="nome">
+                                            <label for="nome"><i class="fa-solid fa-user"></i> Nome</label>
+                                        </div>
+
+                                        <div class="input-field col s12 m12 l6">
+
+                                            <input id="telefone" type="tel" class="validate" name="phone">
+                                            <label for=telefone><i class="fa-solid fa-phone"></i>
+                                                Telefone</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field col s12 m12 l12">
+
+                                        <input id="email" type="email" class="validate" name="email">
+                                        <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                                    </div>
+
+
+                                    <div class="input-field col s12 m12 l12">
+
+                                        <input id="assunto" type="text" class="validate" name="assunto">
+                                        <label for="assunto"><i class="fa-solid fa-megaphone"></i>
+                                            Assunto</label>
+                                    </div>
+
+
+                                    <div class="input-field col s12 m12 l12">
+
+                                        <input id="mensagem" type="text" class="validate" name="message">
+                                        <label for="mensagem"><i class="fa-solid fa-message"></i>
+                                            Mensagem</label>
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <div class="loading"></div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message"></div>
+                                    </div>
+                                    <div class="text-center center"><button type="submit" class="btn">Enviar
+                                            Mensagem</button></div><br>
+                                            
+                                </form>
+                                {% endif %}
+                                
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</secttion>

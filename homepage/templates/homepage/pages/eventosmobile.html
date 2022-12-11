@@ -1,0 +1,107 @@
+{% extends 'global/base_geral.html' %}
+{% block 'title' %}Eventos |{% endblock 'title' %}
+{% block 'conteudo' %}
+<!-- Inscriçoes-->
+<section id="evento" >
+  <div class="section-bg" >
+      <div class="section-container3">
+          <div class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+              <h1>Eventos</h1>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row center">
+          {% for eventos in eventos %}
+          <div class="col s12"><a href="{% url 'evento' eventos.id%}" class="btn-large red"><i class='bx bx-cycling'></i> {{eventos.titulo}}</a></div>
+          <div class="col s12"><hr></div>
+          
+          {% endfor %}
+          
+        
+        </div>
+
+        
+       
+
+
+    
+          
+      </div>
+      <div class="container">
+        <div class="row"><br><br>
+          {% block 'inscricao' %}
+          {% for inscricao in inscricaoitens %}
+          {% include 'homepage/partials/inscricaoitem.html' %}
+          {% endfor %}
+          {% endblock 'inscricao' %}
+        </div>
+      </div>
+
+        <!--
+        <div class="row">
+          <div class="col l4">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="card-image">
+                    <img src="img/logo2.png">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="#"><i class='bx bx-play'></i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, nisi iure earum voluptatum beatae, veritatis vero odio molestias sint soluta quis, perspiciatis eos dolorem dolor ullam deleniti nostrum consectetur porro?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col l4">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="card-image">
+                    <img src="img/logo2.png">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="#"><i class='bx bx-play'></i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, nisi iure earum voluptatum beatae, veritatis vero odio molestias sint soluta quis, perspiciatis eos dolorem dolor ullam deleniti nostrum consectetur porro?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col l4">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="card-image">
+                    <img src="img/logo2.png">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="#"><i class='bx bx-play'></i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, nisi iure earum voluptatum beatae, veritatis vero odio molestias sint soluta quis, perspiciatis eos dolorem dolor ullam deleniti nostrum consectetur porro?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+  
+
+  
+
+
+
+  </div>
+</section>
+
+               
+
+{% endblock 'conteudo' %}

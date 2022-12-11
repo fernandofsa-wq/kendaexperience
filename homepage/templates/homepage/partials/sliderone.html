@@ -1,0 +1,27 @@
+{% block 'slide' %}
+<li>
+    <img class="hide-on-med-and-up" src="{{slider.covermobile.url}}"> <!-- random image -->
+    <img class="show-on-medium-and-up" src="{{slider.coverweb.url}}"> <!-- random image -->
+    <div class="caption center-align">
+        <div class="row div-redes">
+            <a href="">
+                <div class="col l3 m3 s3"><i class='bx bxl-facebook-square icon-face'></i></div>
+            </a>
+            <a href="">
+                <div class="col l3 m3 s3"><i class='bx bxl-instagram-alt icon-instagram'></i></div>
+            </a>
+            <a href="">
+                <div class="col l3 m3 s3"><i class='bx bxl-youtube icon-youtube'></i></div>
+            </a>
+            <a href="">
+                <div class="col l3 m3 s3"><i class='bx bxl-whatsapp-square icon-whatsapp'></i></div>
+            </a>
+
+        </div>
+        <h3>{{slider.titulo}}</h3>
+        <h5 class="light grey-text text-lighten-3">{{slider.subtitulo}}</h5>
+        <br><br><br>
+        <a href="#contato" class="btn-large  pulse">Saiba mais</a>
+    </div>
+</li>
+{% endblock 'slide' %}
